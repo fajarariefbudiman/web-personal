@@ -1,0 +1,28 @@
+body {
+  background-color: rgba(203, 203, 203, 0.573);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+.nav-link {
+    color: #3f3f3f;
+  }
+  
+  .nav-link.active {
+    color: #007bff; 
+  }  
+
+.footer {
+  font-size: smaller;
+  position: relative;
+  background: linear-gradient(to right, rgba(203, 203, 203, 0.573), rgb(228, 228, 228));
+  width: 100%;
+  z-index: 2; 
+  padding: 20px 0; 
+}
