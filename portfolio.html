@@ -2,111 +2,207 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <title>Personal Website</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Fajar Arief</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <!-- Navbar -->
-    <div id="navbar"></div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px)"
+    >
+      <div class="container my-2">
+        <a
+          class="navbar-brand fw-bold fs-2 text-uppercase"
+          href="index.html"
+          style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)"
+          >Fajar</a
+        >
+
+        <!-- Button for Mobile Navigation -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Icon Navbar -->
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a
+                class="nav-link d-flex align-items-center"
+                aria-current="page"
+                href="index.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-house-fill me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav-item me-3">
+              <a
+                class="nav-link d-flex align-items-center"
+                href="about.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-file-person-fill me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
+                </svg>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li class="nav-item me-3">
+              <a
+                class="nav-link d-flex align-items-center"
+                href="portfolio.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-briefcase-fill me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5" />
+                  <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z" />
+                </svg>
+                <span>Portfolio</span>
+              </a>
+            </li>
+
+            <li class="nav-item me-3">
+              <a
+                class="nav-link d-flex align-items-center"
+                href="contact.html"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Content Portfolio -->
     <div class="container my-5">
-      <div class="text-center">
-        <h1
-          class="fw-semibold"
-          style="font-size: 40px"
-        >
-          Portfolio
-        </h1>
-        <p class="mx-3 my-4">Lorem ipsum dolor sit, distinctio quo cumque a quas.</p>
-      </div>
+      <div class="portfolio-content">
+        <h1 class="section-title text-center mb-5">My Portfolio</h1>
+        <p class="text-center mb-4">Showcasing my latest projects and works</p>
 
-      <div class="d-flex flex-wrap justify-content-center align-items-center overflow-auto">
-        <div class="p-2">
-          <a
-            href="#"
-            class="w-25 text-decoration-none px-4 py-1 rounded bg-dark text-white"
-          >
-            Test
-          </a>
-        </div>
-        <div class="p-2">
-          <a
-            href="#"
-            class="w-25 text-decoration-none px-4 py-1 rounded bg-dark text-white"
-          >
-            Test
-          </a>
-        </div>
-        <div class="p-2">
-          <a
-            href="#"
-            class="w-25 text-decoration-none px-4 py-1 rounded bg-dark text-white"
-          >
-            Test
-          </a>
-        </div>
-        <div class="p-2">
-          <a
-            href="#"
-            class="w-25 text-decoration-none px-4 py-1 rounded bg-dark text-white"
-          >
-            Test
-          </a>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="efo">Efo Project</button>
+          <button class="filter-btn" data-filter="suggestion">Suggestion</button>
+          <button class="filter-btn" data-filter="golang">Golang API</button>
+          <button class="filter-btn" data-filter="alliance">Circle Alliance</button>
         </div>
 
-        <div class="d-lg-none mt-5 overlow-hidden">
-          <a href="#">
-            <img
-              src="https://picsum.photos/300/300"
-              alt=""
-              srcset=""
-            />
-          </a>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="efo">
+            <img src="img/porto-efo.jpeg" alt="Efo Project">
+            <div class="portfolio-overlay">
+              <div class="portfolio-overlay-content">
+                <h3 class="portfolio-title">Efo Project</h3>
+                <p class="portfolio-category">Web Development</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="suggestion">
+            <img src="https://picsum.photos/300/300" alt="Suggestion Project">
+            <div class="portfolio-overlay">
+              <div class="portfolio-overlay-content">
+                <h3 class="portfolio-title">Suggestion Project</h3>
+                <p class="portfolio-category">UX Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" data-category="golang">
+            <img src="https://picsum.photos/300/300" alt="Golang API">
+            <div class="portfolio-overlay">
+              <div class="portfolio-overlay-content">
+                <h3 class="portfolio-title">Golang API</h3>
+                <p class="portfolio-category">Backend Development</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more portfolio items as needed -->
         </div>
-        <div class="d-lg-none mt-5 overlow-hidden">
-          <a href="#">
-            <img
-              src="https://picsum.photos/300/300"
-              alt=""
-              srcset=""
-            />
-          </a>
-        </div>
-        <div class="d-lg-none mt-5 overlow-hidden">
-          <a href="#">
-            <img
-              src="https://picsum.photos/300/300"
-              alt=""
-              srcset=""
-            />
-          </a>
-        </div>
-
       </div>
     </div>
 
     <!-- Footer -->
     <div id="footer"></div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scrtipt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+      // Simple portfolio filtering
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            portfolioItems.forEach(item => {
+              if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = 'block';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
   </body>
 </html>
