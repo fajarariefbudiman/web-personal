@@ -14,9 +14,9 @@
     <!-- Content Home -->
     <div class="container d-flex justify-content-center align-items-center vh-100">
       <div class="home-content text-center">
-        <h1 class="mb-4">Fajar Arief</h1>
-        <p class="mb-4">Passionate web developer crafting beautiful and functional digital experiences.</p>
-        <a href="about.html" class="btn btn-about">Discover More</a>
+        <h1 class="mb-4 poppins-bold">Fajar Arief</h1>
+        <p class="mb-4 poppins-regular">Passionate web developer crafting beautiful and functional digital experiences.</p>
+        <a href="about.html" class="btn btn-about poppins-semibold">Discover More</a>
         <div class="social-icons">
           <a href="#"><i class="fab fa-github"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -31,8 +31,8 @@
           container.className = 'bubble-container';
           document.body.appendChild(container);
   
-          const bubbleCount = 15;
-          const sizes = [50, 100, 150, 200];
+          const bubbleCount = 7;
+          const sizes = [50, 100, 150, 180];
   
           for (let i = 0; i < bubbleCount; i++) {
               const bubble = document.createElement('div');
@@ -44,8 +44,8 @@
               
               bubble.style.left = `${Math.random() * 100}%`;
               bubble.style.top = `${Math.random() * 100}%`;
-              bubble.style.animationDuration = `${Math.random() * 2 + 3}s`;
-              bubble.style.animationDelay = `${Math.random() * 2}s`;
+              bubble.style.animationDuration = `${Math.random() * 2 + 4}s`;
+              bubble.style.animationDelay = `${Math.random() * 3}s`;
               
               container.appendChild(bubble);
           }
