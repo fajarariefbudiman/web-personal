@@ -394,5 +394,5 @@ p {
 .carousel-item img {
   object-fit: cover;
   width: 70%;
-  height: 100%;
+  max-height: 400px;
 }
