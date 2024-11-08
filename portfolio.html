@@ -157,10 +157,10 @@
           </button>
           <button
             class="filter-btn"
-            data-filter="suggestion"
-            data-category="suggestion"
+            data-filter="MCU_Dokterhub"
+            data-category="MCU_Dokterhub"
           >
-            Suggestion
+            MCU Dokterhub
           </button>
           <button
             class="filter-btn"
@@ -199,7 +199,7 @@
             />
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-content">
-                <h3 class="portfolio-title">Suggestion Project</h3>
+                <h3 class="portfolio-title">MCU Dokterhub</h3>
                 <p class="portfolio-category">Web Development</p>
               </div>
             </div>
@@ -301,22 +301,20 @@
         const portfolioData = {
           efo: {
             title: "Efo Project",
-            description: `In the Efo project, I developed a dynamic dashboard 
-            interface and player/team ranking pages. Built using Laravel and Bootstrap,
-             this project focuses on providing a web platform related to esports gaming.`,
+            description: `In this project, I worked as a freelancer, developing the dashboard interface and managing CRUD operations for the existing tables. 
+            I also worked on the player rankings page, which includes a search functionality.`,
             images: ["img/porto-efo.jpeg"],
           },
-          suggestion: {
-            title: "Suggestion",
-            description: `The Suggestion Project is the first web blog that I created with the Laravel framework. 
-            Features include user authentication, CRUD operations, search, and category filtering. This project uses Laravel, Bootstrap, and MySQL.
-            And until now it is still being developed to improve my programming skills.`,
-            images: ["img/suggestion-join.png", "img/suggestion-search.png", "img/suggestion-categories.png"],
+          MCU_Dokterhub: {
+            title: "MCU Dokterhub",
+            description: ` In this project, I worked as a freelancer, handling the CRUD operations for the Patient and Patient Examination tables. 
+            Additionally, I implemented PDF regeneration functionality using Laravel Snappy and used Tailwind for the frontend.`,
+            images: ["img/mcu-dokterhub1.png", "img/mcu-dokterhub2.png", "img/mcu-dokterhub3.png"],
           },
           dokterhub: {
             title: "Core Dokterhub",
-            description: `In the DokterHub core project, I was involved in developing several features, 
-            namely implementing user signatures and creating patient registration forms. These components are built using the Laravel framework.`,
+            description: `In this project, I worked on two main tasks. The first was implementing a signature feature for users who wish to receive treatment. 
+            The second was developing a form for patient data entry using Laravel and Bootstrap.`,
             images: ["img/form-docterhub.png", "img/signature-docterhub.png", "img/login-docterhub.png"],
           },
           alliance: {
@@ -336,10 +334,8 @@
               detailTitle.textContent = data.title;
               detailDescription.textContent = data.description;
 
-              // Clear existing carousel items
               carouselInner.innerHTML = "";
 
-              // Add new carousel items
               data.images.forEach((image, index) => {
                 const carouselItem = document.createElement("div");
                 carouselItem.className = `carousel-item ${index === 0 ? "active" : ""}`;
@@ -350,7 +346,6 @@
               portfolioDetail.style.display = "block";
               portfolioDetail.scrollIntoView({ behavior: "smooth" });
 
-              // Initialize or refresh the carousel
               const carousel = new bootstrap.Carousel(document.getElementById("carousel-inner"));
               carousel.cycle();
             }
